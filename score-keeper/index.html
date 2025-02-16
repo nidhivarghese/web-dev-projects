@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body data-theme="light">
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">            
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-3by2">
+                                <img 
+                                    src = "https://dailybaro.orangemedianetwork.com/wp-content/uploads/2023/07/sports.png"
+                                    alt="Score Keeper"
+                                />
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                        <p class="card-header-title">Score Keeper</p>
+                        </header>
+                        <div class="card-content">
+                        <div class="content">
+                            <h1 class="title is-1 is-spaced has-text-weight-medium">
+                                <span id="p1score">0</span> 
+                                to 
+                                <span id="p2score">0</span>
+                            </h1>
+                            <p class="subtitle">Use the buttons below to keep score</p>
+                            <label for="winningScoreSelect" class="label is-large is-inline has-text-grey-dark">Playing to:
+                                <div class="select is-rounded">
+                                    <select id="winningScoreSelect">
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                    </select>
+                                </div>
+                            </label>
+                        </div>
+                        </div>
+                        <footer class="card-footer">
+                            <button id="p1button" class="button is-primary card-footer-item">+1 Player 1</button>
+                            <button id="p2button" class="button  is-info card-footer-item">+1 Player 2</button>
+                            <button id="reset" class="button is-danger card-footer-item">Reset</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
