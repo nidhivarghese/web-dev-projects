@@ -94,11 +94,27 @@ function changeElement(Id, text){
 function generateQA(){
     var x = Math.round(10 * Math.random());
     var y = Math.round(10 * Math.random());
-    // var operation = ['']
+    var operation = ['+', '-', 'x', '/'];
 
-    correctAnswer = x * y;
+    var operationIndex = Math.round(3 * Math.random());
 
-    changeElement('question', x+'x'+y)
+    var question = x + operation[operationIndex] + y;
+
+    if(x<y){
+        question = y + operation[operationIndex] + x;
+    }else if(operation[operationIndex] == '/'){
+        if(x % y != 0){
+            x = x + (y - x % y)
+            question = x + operation[operationIndex] + y;
+        }
+    }
+
+    correctAnswer = parseInt(eval(question.replace('x', '*').replace('/', '/')));
+
+    // console.log(question)
+    // console.log(correctAnswer)
+
+    changeElement('question', question)
 
     var correctPosition = 1 + Math.round(3 * Math.random())
 
