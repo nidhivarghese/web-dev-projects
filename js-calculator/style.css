@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body{
+    position: relative;
+    background-image: linear-gradient(#260D2D, #EF8FA7);
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 110%;
+    letter-spacing: 2px;
+}
+
+.container{
+    width: 350px;
+    margin: auto auto;
+    margin-top: 5%;
+    text-align: center;
+    box-shadow: 5px 5px 15px #333;
+}
+
+
+#displayArea{
+    text-align: right;
+    height: 150px;
+    background: #1A1B1D;
+    color: #CACBCD;
+    padding-right: 10px;
+}
+
+#operationArea{
+    padding-top: 40px;
+    padding-bottom: 15px; 
+    padding: auto 5px;
+    font-size: 20px;
+}
+
+#resultArea{
+    font-size: 45px;
+    padding-bottom: 20px;
+    overflow-x: hidden;
+}
+
+.btn{
+    background: #1F2022;
+    color: #CACBCD;
+}
+
+.btn-op{
+    color: #EF8FA7;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.ac-row{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+
+.row > div{
+    padding: 20px
+}
+
+.row div:hover{
+    background: white;
+    color: #1F2022;
+}
+
+footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    padding: 25px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 80%;
+}
+
+#nv{
+    color: #EF8FA7;
+}
+
+
+@media only screen and (max-height: 540px){
+    footer{
+        position: relative;
+        left: -12px;
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 350px){
+    footer{
+        width: 350px;
+        font-size: 70%;
+    }
+}

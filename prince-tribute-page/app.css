@@ -1,0 +1,203 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    background: url(images/prince.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+ }
+ h1, h2{
+    font-family: 'Raleway', sans-serif;
+ }
+ 
+ a, blockquote, p, h5, span{
+    font-family: 'Montserrat', sans-serif;
+ }
+ 
+ #main{
+    width: 100%;
+ }
+ 
+ #header{
+    color: #640F8F;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+ }
+ 
+ #header > div {
+    position: absolute;
+    left: 10%;
+    padding-top: 0;
+    text-align: justify;
+ }
+ 
+ @media screen and (max-width: 749px){
+    #header{
+       position: absolute;
+       top: 250%;
+       background: blue;
+    }
+ }
+ 
+ @media screen and (min-width: 750px) and (max-width: 1499px){
+    #header > div{
+       position: absolute;
+       left: 1%;
+       top: 25%;
+    }
+ 
+    #header> div> h1{
+       font-size: 80px;
+    }
+ }
+ 
+ 
+ @media screen and (min-width: 1500px){
+    #header > div{
+       position: absolute;
+       left: 1%;
+       top: 25%;
+    }
+ 
+    #header> div> h1{
+       font-size: 100px;
+    }
+ }
+ 
+ 
+ #header > div > h1{
+    letter-spacing: 7px;
+    font-size: 200px;
+    margin-bottom: 0px;
+ }
+ 
+ #header > div > span{
+    color:#FEC703;
+    margin-top: 0px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 12px;
+ }
+ 
+ #prince-quote{
+    background: #640F8F;
+    color: #FEC703;
+    text-align: center;
+    font-weight: 100;
+    font-size: 35px;
+    width: 50%;
+    margin: auto auto;
+    position: absolute;
+    left: 25%; 
+ }
+ 
+ #tribute-info{
+    width:100% ;
+    display: block;
+    text-align: center;
+    background: rgba(255, 251, 238, 0.6)
+ }
+ 
+ #tribute-info #about{
+    width: 50%;
+    margin: 4% auto;
+    padding: 250px 170px 200px 170px;
+ }
+ 
+ #tribute-info  section  h2{
+    text-align: center;
+    color: #640F8F;
+    font-size: 50px;
+ }
+ 
+ 
+ #tribute-info  section  p{
+    text-align: justify;
+    font-size: 15px;
+ }
+ 
+ 
+ #tribute-numbers{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 100%;
+    color: #640F8F;
+    background-color: #FEC703;
+    text-align: center;
+    margin: 4% auto 13%;
+    padding-top: 3%;
+ }
+ 
+ #tribute-numbers h5{
+    font-size: 99%;
+    margin-bottom: 0%;
+ }
+ 
+ #tribute-numbers div p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 800%;
+    text-align: center;
+    margin: 15%;
+    margin-top: 0px;
+    padding-top: 0px; 
+ }
+ 
+ #discography hr{
+    width: 50%;
+ }
+ 
+ .grid-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 80%;
+    margin: auto;
+    padding: 150px;
+ }
+ 
+ .grid-container div img{
+    filter: grayscale(100%);
+    transition: transform .2s;
+ }
+ 
+ .grid-container div img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.2);
+ }
+ 
+ #tribute-link{
+    margin: 8% 30%;
+    border: 2px solid #FEC703;
+    text-align: center;
+ }
+ 
+ #tribute-link a{
+    color: #FEC703;
+    text-decoration: none;
+    font-size: 40px;
+    width: 20%;
+ }
+ 
+ #tribute-link:hover{
+    color: white;
+    background: #FEC703;
+ }
+
+ #tribute-link:hover a{
+    color: inherit;
+ }
+ 
+ #footer{
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+    color: white;
+    background: #640F8F ;
+    font-weight: 100;
+ }
+ 
+ #footer > p > span{
+    color: #FEC703;
+    font-weight: 400;
+ }
+ 
